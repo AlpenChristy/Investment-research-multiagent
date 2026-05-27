@@ -96,6 +96,32 @@ class AnalysisReport(BaseModel):
     processing_time_ms: int
     timestamp:       datetime = datetime.utcnow()
 
+#Technical Analysis
+class IndicatorSignal(BaseModel):
+    name: str
+    value: float | None
+    signal: Literal["bullish", "bearish", "neutral"]
+    interpretation: str          # one sentence, plain English
+
+class KeyLevels(BaseModel):
+    support:    float            # strongest nearby floor
+    resistance: float            # strongest nearby ceiling
+    high_52w:   float
+    low_52w:    float
+
+class TAOutput(BaseModel):
+    ticker:          str
+    price:           float
+    overall_signal:  Literal["strong_buy", "buy", "neutral", "sell", "strong_sell"]
+    signal_score:    float                # –10 to +10
+    confluence:      int                  # how many indicators agree with overall signal
+    trend:           list[IndicatorSignal]
+    momentum:        list[IndicatorSignal]
+    volatility:      list[IndicatorSignal]
+    volume:          list[IndicatorSignal]
+    key_levels:      KeyLevels
+    reasoning:       str                  # 3–4 sentence narrative
+
 
 # paste this at the bottom of models.py temporarily, then delete it
 if __name__ == "__main__":
