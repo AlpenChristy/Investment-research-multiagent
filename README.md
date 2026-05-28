@@ -1,4 +1,4 @@
-# 🤖 Investment Research Multi-Agent System
+# Investment Research Multi-Agent System
 
 > A production ready multi-agent AI platform that autonomously researches any publicly traded stock and delivers a structured investment thesis — complete with bull/bear debate, technical analysis, fundamental deep-dive, SEC filings, and a synthesized BUY / HOLD / SELL recommendation.
 
@@ -479,7 +479,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## 🙋 Author
 
-**Alpen Christy**  
-Built as a portfolio project demonstrating multi-agent AI system design, async Python, and financial data engineering.
-
-> *"Developed a multi-agent financial research platform using LangGraph and FastAPI, enabling autonomous investment analysis, sentiment evaluation, risk assessment, and AI-driven bullish/bearish debate generation."*
+**Alpen Christy**
