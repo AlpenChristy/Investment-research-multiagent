@@ -1,4 +1,5 @@
 # pyrefly: ignore [missing-import]
+import asyncio
 import yfinance as yf
 import pandas as pd
 from datetime import datetime, timedelta
@@ -244,3 +245,7 @@ async def fetch_ohlcv(ticker: str, period: str = "6mo", interval: str = "1d") ->
     df.columns = [c.lower() for c in df.columns]
     df.dropna(inplace=True)
     return df
+
+
+if __name__ == "__main__":
+    print(fetch_market_data("AAPL"))
