@@ -1,6 +1,6 @@
 # 🤖 Investment Research Multi-Agent System
 
-> A production-style multi-agent AI platform that autonomously researches any publicly traded stock and delivers a structured investment thesis — complete with bull/bear debate, technical analysis, fundamental deep-dive, SEC filings, and a synthesized BUY / HOLD / SELL recommendation.
+> A production ready multi-agent AI platform that autonomously researches any publicly traded stock and delivers a structured investment thesis — complete with bull/bear debate, technical analysis, fundamental deep-dive, SEC filings, and a synthesized BUY / HOLD / SELL recommendation.
 
 ---
 
