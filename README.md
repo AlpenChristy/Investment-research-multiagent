@@ -6,7 +6,7 @@
 
 ## 📌 Overview
 
-This system takes a single ticker symbol (e.g. `NVDA`, `AAPL`, `TSLA`) and orchestrates **6 specialised AI agents** running in parallel to produce a comprehensive, institutional-grade investment report. Each agent is an independent reasoning unit with its own prompt, data context, and Pydantic-validated output schema. A central **Synthesizer** then acts as an investment committee moderator, weighing every agent's conviction score and delivering a final recommendation.
+This system takes a single ticker symbol (e.g. `NVDA`, `AAPL`, `TSLA`) and orchestrates **7 specialised AI agents** running in parallel to produce a comprehensive, institutional-grade investment report. Each agent is an independent reasoning unit with its own prompt, data context, and Pydantic-validated output schema. A central **Synthesizer** then acts as an investment committee moderator, weighing every agent's conviction score and delivering a final recommendation.
 
 Built with **FastAPI**, **LangGraph**, **OpenAI GPT-4.1-mini**, and **yfinance** — the architecture is intentionally clean, async-first, and designed to scale.
 
@@ -25,7 +25,7 @@ Built with **FastAPI**, **LangGraph**, **OpenAI GPT-4.1-mini**, and **yfinance**
 | 🗞️ **Live News Sentiment** | NewsAPI integration pulls the 20 most recent articles and rates overall sentiment with a confidence score |
 | 🏛️ **SEC Filing Tracker** | Monitors recent 8-K filings (earnings releases, M&A events, guidance updates, leadership changes) |
 | 🏦 **Gov Contract Intelligence** | Queries USASpending.gov for recent government contract awards — especially relevant for defence/tech stocks |
-| 🧠 **LLM Synthesizer** | A senior investment committee moderator persona that weighs all 5 agent outputs into one final thesis |
+| 🧠 **LLM Synthesizer** | A senior investment committee moderator persona that weighs all 7 agent outputs into one final thesis |
 
 ---
 
